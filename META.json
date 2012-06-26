@@ -1,10 +1,10 @@
 {
-   "abstract" : "#",
+   "abstract" : "a Number::Format that ignores the system locale",
    "author" : [
       "Christian Walde <walde.christian@googlemail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "generated_by" : "Dist::Zilla version 4.300017, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "unrestricted"
    ],
@@ -32,25 +32,29 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.006",
-            "strictures" : 0
+            "Carp" : "0",
+            "Number::Format" : "0",
+            "base" : "0",
+            "perl" : "5.008",
+            "strictures" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "File::Find" : 0,
-            "File::Temp" : 0,
-            "Test::InDistDir" : 0,
-            "Test::More" : 0,
-            "strict" : 0,
-            "warnings" : 0
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::InDistDir" : "0",
+            "Test::More" : "0",
+            "strict" : "0",
+            "utf8" : "0",
+            "warnings" : "0"
          }
       }
    },
    "provides" : {
       "Number::Format::FixedLocale" : {
          "file" : "lib/Number/Format/FixedLocale.pm",
-         "version" : "0.000001"
+         "version" : "1.121780"
       }
    },
    "release_status" : "stable",
@@ -66,6 +70,6 @@
          "web" : "https://github.com/wchristian/number-format-fixedlocale"
       }
    },
-   "version" : "0.000001"
+   "version" : "1.121780"
 }
 
